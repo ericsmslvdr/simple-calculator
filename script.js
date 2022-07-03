@@ -1,12 +1,12 @@
 const outputBox = document.querySelector('#output')
 const numberBtn = document.querySelectorAll('.number')
 const operationBtn = document.querySelectorAll('.operation')
-const resetBtn = document.querySelector('.reset')
+const clearBtn = document.querySelector('.clear')
 let operation = ''
 let numTemp = 0
 let total = 0
 
-resetBtn.addEventListener('click', () => {
+clearBtn.addEventListener('click', () => {
     outputBox.value = ''
     operation = ''
     numTemp = 0
