@@ -15,6 +15,7 @@ clearBtn.addEventListener('click', () => {
 
 numberBtn.forEach((num) => {
     num.addEventListener('click', () => {
+        if (num.value === '.' && outputBox.value.includes('.')) return
         outputBox.value += num.value
     })
 })
